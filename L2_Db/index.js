@@ -20,4 +20,5 @@ mongoose
     .then(()=>console.log("connected to db"))
     .catch((err)=>console.log(err));
 
+app.use("/posts", require("./routes/posts"));
 app.listen(process.env.PORT, () => console.log("Server is up and running"));
