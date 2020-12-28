@@ -21,5 +21,6 @@ mongoose
     })
 
 app.use("/api/user", require("./routes/auth"));
+app.use("/api/user", require("./routes/dashboard"));
 app.listen(process.env.PORT, ()=> console.log("Server is up and running"));
 
